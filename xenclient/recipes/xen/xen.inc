@@ -8,7 +8,7 @@ PV = "${XEN_VERSION}+git${SRCPV}"
 SRCREV_patchqueue = "${AUTOREV}"
 
 SRC_URI = "${XEN_SRC_URI};name=source \
-	  git://${OPENXT_GIT_MIRROR}/xen-common-pq.git;protocol=${OPENXT_GIT_PROTOCOL};branch=${OPENXT_BRANCH};destsuffix=patchqueue;name=patchqueue \
+	  git://github.com/jimries/xen-common-pq.git;protocol=git;branch=master;destsuffix=patchqueue;name=patchqueue \
 "
 
 SRC_URI[source.md5sum] := "${XEN_SRC_MD5SUM}"
